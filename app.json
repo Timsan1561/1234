@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "PLANT CORE",
+    "slug": "plant-core",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "plantcore",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Разрешите доступ к камере для фотофиксации дефектов и выполненных работ."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Разрешите доступ к фотогалерее."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+  "adaptiveIcon": {
+    "foregroundImage": "./assets/icon.png",
+    "backgroundColor": "#1e293b"
+  },
+  "package": "com.plantcore.app"
+},
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
